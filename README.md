@@ -10,3 +10,6 @@ This is a Python binding library for the [total curvature estimation calculator]
 - [openmp](https://www.openmp.org) for parallelization 
 - [libigl](https://libigl.github.io) for mesh data structures and geometry processing tools 
 - [polyscope](http://polyscope.run) for 3D visualizations and rendering 
+
+## OS
+This binding was developed on MacOS 14.7. Please refer to the original [C++ library](https://github.com/HeCraneChen/total-curvature-estimation) for Ubuntu and Windows documentation.
