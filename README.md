@@ -12,4 +12,20 @@ This is a Python binding library for the [total curvature estimation calculator]
 - [polyscope](http://polyscope.run) for 3D visualizations and rendering 
 
 ## OS
-This binding was developed on MacOS 14.7. Please refer to the original [C++ library](https://github.com/HeCraneChen/total-curvature-estimation) for Ubuntu and Windows documentation.
+This binding was developed on MacOS 14.7. Please refer to the original [C++ library](https://github.com/HeCraneChen/total-curvature-estimation) for Ubuntu and Windows documentation. There may be computer architecture discrepancies on the Intel chip vs M1/M2/M3. 
+
+### Compile in MacOS
+```
+cd total-curvature-estimation 
+mkdir build 
+cd build 
+cmake .. 
+make
+```
+If your machine uses M1/M2/M3 and your compiler cannot locate openmp, use the following before issuing the compilation commands: 
+```
+sudo mkdir -p /usr/local/lib /usr/local/include 
+sudo ln -s $(brew --prefix libomp)/lib/libomp.dylib /usr/local/lib/libomp.dylib 
+sudo ln -s $(brew --prefix libomp)/include/* /usr/local/include/ 
+cmake ..
+```
