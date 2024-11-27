@@ -16,7 +16,3 @@ import TotalCurvatureBindings
 # --in /Users/revakakaria/Documents/NEU/total-curvature-calculator-python-bindings_copy/total-curvature-calculator/example_data/cow.ply --out /Users/revakakaria/Documents/NEU/total-curvature-calculator-python-bindings_copy/total-curvature-calculator/results/cow_mesh.txt --format mesh
 
 TotalCurvatureBindings.curvature(sys.argv)
-
-
-
-#is it better to keep this as command line arguments? or parameterize it within the Python script?
