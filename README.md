@@ -6,7 +6,7 @@ This is a Python binding library for the [total curvature estimation calculator]
 ## Dependencies
 - [STL](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/) 
 - [pybind11](https://github.com/pybind/pybind11) for binding Python to C++
-- [gmp](https://gmplib.org)
+- [gmp](https://gmplib.org) for arbitrary precision arithmetic
 - [eigen](https://eigen.tuxfamily.org/index.php?title=Main_Page) for matrix data structures 
 - [openmp](https://www.openmp.org) for parallelization 
 - [libigl](https://libigl.github.io) for mesh data structures and geometry processing tools 
