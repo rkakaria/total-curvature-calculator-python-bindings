@@ -11,9 +11,9 @@ import polyscope as ps
 import TotalCurvatureBindings
 
 # Total Curvature Point Cloud
-V, F = igl.read_triangle_mesh("./total-curvature-calculator/example_data/cow_points.ply")
+V, F = igl.read_triangle_mesh("./total-curvature-estimation/example_data/cow_points.ply")
 
-N, F = igl.read_triangle_mesh("./total-curvature-calculator/example_data/cow_normals.ply")
+N, F = igl.read_triangle_mesh("./total-curvature-estimation/example_data/cow_normals.ply")
 
 # calculate curvature
 K = TotalCurvatureBindings.cloud(V, N)

@@ -2,8 +2,8 @@
 #include <pybind11/pybind11.h>
 #include <pybind11/eigen.h>
 #include <pybind11/stl.h>
-#include "total-curvature-calculator/total_curvature_mesh.cpp"
-#include "total-curvature-calculator/total_curvature_point_cloud.cpp"
+#include "total-curvature-estimation/total_curvature_mesh.cpp"
+#include "total-curvature-estimation/total_curvature_point_cloud.cpp"
 
 Eigen::VectorXd wrap_mesh(const Eigen::MatrixXd& V, const Eigen::MatrixXi& F, Eigen::MatrixXd N) {
     Eigen::VectorXd k_S;

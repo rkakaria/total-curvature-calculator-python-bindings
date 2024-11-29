@@ -11,7 +11,7 @@ import polyscope as ps
 import TotalCurvatureBindings
 
 # Total Curvature Mesh
-V, F = igl.read_triangle_mesh("./total-curvature-calculator/example_data/cow.ply")
+V, F = igl.read_triangle_mesh("./total-curvature-estimation/example_data/cow.ply")
 
 N = igl.per_vertex_normals(V, F, igl.PER_VERTEX_NORMALS_WEIGHTING_TYPE_AREA)
 
