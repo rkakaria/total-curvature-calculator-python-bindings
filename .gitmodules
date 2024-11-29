@@ -1,0 +1,12 @@
+[submodule "total-curvature-estimation"]
+	path = total-curvature-estimation
+	url = https://github.com/HeCraneChen/total-curvature-estimation.git
+[submodule "libigl"]
+	path = libigl
+	url = https://github.com/libigl/libigl.git
+[submodule "polyscope"]
+	path = polyscope
+	url = https://github.com/nmwsharp/polyscope.git
+[submodule "eigen"]
+	path = eigen
+	url = https://gitlab.com/libeigen/eigen.git
