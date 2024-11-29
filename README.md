@@ -55,3 +55,23 @@ cd ..
 python3 test_cloud.py
 ```
 <img width="1532" alt="Cow_Sagittal_Point_Cloud" src="https://github.com/user-attachments/assets/bc57d602-4d0c-44f3-af96-659eb44d098a">
+
+## Documentation
+
+Parameters 
+---------- 
+V : numpy double array (n, 3)
+    Matrix of vertex coordinates 
+F : numpy int array, optional (default None) (n, 3)
+    Matrix of triangle indices 
+N : numpy double array (n, 3)
+    Matrix of normalized vectors at a vertex
+ 
+Returns 
+------- 
+K : vector
+    Per-vertex scalar field representing curvature values at each vertex
+
+K_vis: vector
+    Scaled curvature values for better visualization
+
