@@ -1,20 +1,19 @@
-// bindings.cpp
 #include <pybind11/pybind11.h>
 #include <pybind11/eigen.h>
-#include <pybind11/stl.h>
 #include "total-curvature-estimation/total_curvature_mesh.cpp"
 #include "total-curvature-estimation/total_curvature_point_cloud.cpp"
 
+// return k_S as a list/vector of curvature values so that it can be used in Python
 Eigen::VectorXd wrap_mesh(const Eigen::MatrixXd& V, const Eigen::MatrixXi& F, Eigen::MatrixXd N) {
     Eigen::VectorXd k_S;
 
-    igl::per_vertex_normals(V, F, N);
     k_S.resize(V.rows()); 
     
     TotalCurvatureMesh(V, F, N, k_S);
     return k_S;
 }
 
+// return k_S as a list/vector of curvature values so that it can be used in Python
 Eigen::VectorXd wrap_cloud(const Eigen::MatrixXd& V, const Eigen::MatrixXd& N) {
     Eigen::VectorXd k_S;
     int K = 20;
