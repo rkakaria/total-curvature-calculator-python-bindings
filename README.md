@@ -13,13 +13,13 @@ This is a Python binding library for the [total curvature estimation calculator]
 - [polyscope](http://polyscope.run) for 3D visualizations and rendering 
 
 ## OS and Python Version
-This binding was developed on MacOS 14.7. Please refer to the original [C++ library](https://github.com/HeCraneChen/total-curvature-estimation) for Ubuntu and Windows documentation. There may be computer architecture discrepancies on the Intel chip vs M1/M2/M3. 
+This binding was developed on MacOS 14.7. Please refer to the original [C++ library](https://github.com/HeCraneChen/total-curvature-estimation) for Ubuntu and Windows documentation. 
 
-This library uses the default Python 3.9 package. If you are using anaconda, please switch to the default package. 
+This library was developed and tested using the macOS 64-bit universal2 installer for [Python 3.9](https://www.python.org/downloads/release/python-3913/). Please note that using other distributions of Python, i.e. from anaconda, may result in errors building and using the bindings if they are not a universal2 binary builds of Python which runs on both Apple Silicon and Intel chip architectures. 
 
 ### Compile in MacOS
 ```
-cd total-curvature-estimation 
+cd total-curvature-calculator-python-bindings 
 mkdir build 
 cd build 
 cmake .. 
@@ -33,7 +33,7 @@ sudo ln -s $(brew --prefix libomp)/include/* /usr/local/include/
 cmake ..
 ```
 ### Run
-Run your files from the total-curvature-calculator-python-bindings folder.
+Exit the build folder and run your files from the total-curvature-calculator-python-bindings folder.
 #### Triangle Mesh
 ```
 cd .. 
