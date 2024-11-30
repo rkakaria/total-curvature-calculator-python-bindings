@@ -17,6 +17,8 @@ This library was developed on MacOS 14.7. Please refer to the original [C++ libr
 
 The bindings were developed and tested using the macOS 64-bit universal2 build of [Python 3.9](https://www.python.org/downloads/release/python-3913/). Please note that using other distributions of Python, i.e. from anaconda, may result in errors building and using the bindings if they are not universal2 binary builds of Python, which run on both Apple Silicon and Intel chip architectures. 
 
+##Compiling and Running
+
 ### Compile in MacOS
 Clone the repository with dependencies:
 ```
@@ -38,7 +40,7 @@ sudo ln -s $(brew --prefix libomp)/include/* /usr/local/include/
 cmake ..
 ```
 ### Run
-Exit the build folder and run your files from the total-curvature-calculator-python-bindings folder.
+Exit the build folder and run the test files from the total-curvature-calculator-python-bindings folder. Polyscope is used to visualize the returned curvature values, which are stored in the variable K.
 #### Triangle Mesh
 ```
 cd .. 
