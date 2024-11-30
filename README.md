@@ -12,6 +12,7 @@ This is a Python binding library for the [total curvature estimation calculator]
 - [libigl](https://libigl.github.io) for mesh data structures and geometry processing tools 
 - [polyscope](http://polyscope.run) for 3D visualizations and rendering
 - [mpfr](https://www.mpfr.org/) for arbitrary-precision binary floating-point computation 
+
 While some of these dependencies have been added as submodules to this repository, others must be installed using [homebrew](https://brew.sh/) or [pip](https://pypi.org/project/pip/).
 
 ## OS and Python Version
