@@ -22,6 +22,6 @@ K_vis = K**0.0625
 
 # visualize
 ps.init()
-ps_mesh = ps.register_point_cloud("cow cloud", V)
+ps_mesh = ps.register_point_cloud("cow point cloud", V)
 ps_mesh.add_scalar_quantity("curvature", K_vis, enabled=True, cmap = "jet")
 ps.show()
