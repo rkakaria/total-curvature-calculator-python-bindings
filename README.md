@@ -6,18 +6,20 @@ This is a Python binding library for the [total curvature estimation calculator]
 ## Dependencies
 - [STL](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/) 
 - [pybind11](https://github.com/pybind/pybind11) for binding Python to C++
-- [gmp](https://gmplib.org) for arbitrary precision arithmetic
+- [gmp](https://gmplib.org) for arbitrary-precision arithmetic
 - [eigen](https://eigen.tuxfamily.org/index.php?title=Main_Page) for matrix data structures 
 - [openmp](https://www.openmp.org) for parallelization 
 - [libigl](https://libigl.github.io) for mesh data structures and geometry processing tools 
-- [polyscope](http://polyscope.run) for 3D visualizations and rendering 
+- [polyscope](http://polyscope.run) for 3D visualizations and rendering
+- [mpfr](https://www.mpfr.org/) for arbitrary-precision binary floating-point computation 
+While some of these dependencies have been added as submodules to this repository, others must be installed using [homebrew](https://brew.sh/) or [pip](https://pypi.org/project/pip/).
 
 ## OS and Python Version
 This library was developed on MacOS 14.7. Please refer to the original [C++ library](https://github.com/HeCraneChen/total-curvature-estimation) for Ubuntu and Windows documentation. 
 
 The bindings were developed and tested using the macOS 64-bit universal2 build of [Python 3.9](https://www.python.org/downloads/release/python-3913/). Please note that using other distributions of Python, i.e. from anaconda, may result in errors building and using the bindings if they are not universal2 binary builds of Python, which run on both Apple Silicon and Intel chip architectures. 
 
-##Compiling and Running
+## Compiling and Running
 
 ### Compile in MacOS
 Clone the repository with dependencies:
