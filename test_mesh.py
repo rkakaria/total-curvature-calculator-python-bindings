@@ -7,7 +7,7 @@ import os
 sys.path.append(os.path.join(sys.path[0], 'build'))
 
 #import the shared object 
-import TotalCurvatureBindings
+import calcurve
 
 # set V, F, and N using test data
 V, F = igl.read_triangle_mesh("./total-curvature-estimation/example_data/cow.ply")
@@ -15,7 +15,7 @@ V, F = igl.read_triangle_mesh("./total-curvature-estimation/example_data/cow.ply
 N = igl.per_vertex_normals(V, F, igl.PER_VERTEX_NORMALS_WEIGHTING_TYPE_AREA)
 
 # calculate curvature
-K = (TotalCurvatureBindings.mesh(V, F, N))
+K = (calcurve.mesh(V, F, N))
 
 # scale curvature values for better visualization
 K_vis = K**0.0425

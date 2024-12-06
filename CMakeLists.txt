@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(TotalCurvatureBindings)
+project(calcurve)
 
 list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
@@ -30,7 +30,6 @@ find_package(OpenMP REQUIRED)
 # python and pybind11
 find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
 find_package(pybind11 REQUIRED)
-# add_subdirectory("total-curvature-calculator")
 
 # create bindings
 pybind11_add_module(${PROJECT_NAME} MODULE bindings.cpp)

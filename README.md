@@ -4,6 +4,9 @@
 This is a Python binding library for the [total curvature estimation calculator](https://github.com/HeCraneChen/total-curvature-estimation) by [Professor Crane Chen](https://github.com/HeCraneChen) written in C++. The total curvature estimation calculator is a fast and robust total curvature estimation method that works for both triangle meshes and point clouds. 
 
 ## Dependencies
+
+For building in cmake:
+
 - [STL](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/) 
 - [pybind11](https://github.com/pybind/pybind11) for binding Python to C++
 - [gmp](https://gmplib.org) for arbitrary-precision arithmetic
@@ -13,10 +16,14 @@ This is a Python binding library for the [total curvature estimation calculator]
 - [polyscope](http://polyscope.run) for 3D visualizations and rendering
 - [mpfr](https://www.mpfr.org/) for arbitrary-precision binary floating-point computation 
 
-While some of these dependencies have been added as submodules to this repository, others must be installed using [homebrew](https://brew.sh/) or [pip](https://pypi.org/project/pip/).
+While some of these dependencies have been added as submodules to this repository, others may be installed using [homebrew](https://brew.sh/) or other methods.
+
+For testing in python:
+- [libigl Python installation](https://github.com/libigl/libigl-python-bindings)
+- [polyscope Python installation](https://github.com/nmwsharp/polyscope)
 
 ## OS and Python Version
-This library was developed on MacOS 14.7. Please refer to the original [C++ library](https://github.com/HeCraneChen/total-curvature-estimation) for Ubuntu and Windows documentation. 
+This library was developed on MacOS 15.0.1. Please refer to the original [C++ library](https://github.com/HeCraneChen/total-curvature-estimation) for Ubuntu and Windows documentation. 
 
 The bindings were developed and tested using the macOS 64-bit universal2 build of [Python 3.9](https://www.python.org/downloads/release/python-3913/). Please note that using other distributions of Python, i.e. from anaconda, may result in errors building and using the bindings if they are not universal2 binary builds of Python, which run on both Apple Silicon and Intel chip architectures. 
 
@@ -35,15 +42,10 @@ cd build
 cmake .. 
 make
 ```
-If your machine uses M1/M2/M3 and your compiler cannot locate openmp, use the following before issuing the compilation commands: 
-```
-sudo mkdir -p /usr/local/lib /usr/local/include 
-sudo ln -s $(brew --prefix libomp)/lib/libomp.dylib /usr/local/lib/libomp.dylib 
-sudo ln -s $(brew --prefix libomp)/include/* /usr/local/include/ 
-cmake ..
+Please visit the original C++ library readme for issues locating openmp on Apple Silicon machines. 
 ```
 ### Run
-Exit the build folder and run the test files from the total-curvature-calculator-python-bindings folder. Polyscope is used to visualize the returned curvature values, which are stored in the variable K.
+Exit the build folder and run the test files from the total-curvature-calculator-python-bindings folder. Libigl is used to read 3D model files and polyscope to visualize the models and returned curvature values, which are stored in the variable K.
 #### Triangle Mesh
 ```
 cd .. 
