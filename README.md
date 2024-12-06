@@ -43,7 +43,7 @@ cmake ..
 make
 ```
 Please visit the original C++ library readme for issues locating openmp on Apple Silicon machines. 
-```
+
 ### Run
 Exit the build folder and run the test files from the total-curvature-calculator-python-bindings folder. Libigl is used to read 3D model files and polyscope to visualize the models and returned curvature values, which are stored in the variable K.
 #### Triangle Mesh
@@ -69,18 +69,20 @@ python3 test_cloud.py
 <img width="1532" alt="Cow_Sagittal_Point_Cloud" src="https://github.com/user-attachments/assets/bc57d602-4d0c-44f3-af96-659eb44d098a">
 
 ## Documentation
-```
+
 Parameters 
 ---------- 
+```
 V : numpy double array (n, 3)
     Matrix of vertex coordinates 
 F : numpy int array, optional (default None) (n, 3)
     Matrix of triangle indices 
 N : numpy double array (n, 3)
     Matrix of normalized vectors at a vertex
- 
+```
 Returns 
 ------- 
+```
 K : vector
     Per-vertex scalar field representing curvature values at each vertex
 
