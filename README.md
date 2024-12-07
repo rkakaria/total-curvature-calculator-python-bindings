@@ -51,15 +51,7 @@ Exit the build folder and run the test files from the total-curvature-calculator
 cd .. 
 python3 test_mesh.py
 ```
-This program allows you to toggle the smoothness between 3 options:
-##### Flat
-<img width="1532" alt="Cow_Sagittal_Flat" src="https://github.com/user-attachments/assets/d4521cbb-b1ef-42c7-a194-3607452077f1">
-
-##### Smooth
 <img width="1532" alt="Cow_Sagittal_Smooth" src="https://github.com/user-attachments/assets/41c9b00b-51d8-4368-927d-88ed94211a34">
-
-##### Tri Flat
-<img width="1532" alt="Cow_Sagittal_Tri_Flat" src="https://github.com/user-attachments/assets/d51e09e4-7cf3-426d-b060-cc86cc6c28a5">
 
 #### Point Cloud
 ```

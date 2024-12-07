@@ -7,7 +7,7 @@ import os
 sys.path.append(os.path.join(sys.path[0], 'build'))
 
 #import the shared object 
-import calcurve
+import curvcalc
 
 # set V, F, and N using test data
 V, F = igl.read_triangle_mesh("./total-curvature-estimation/example_data/cow_points.ply")
@@ -15,7 +15,7 @@ V, F = igl.read_triangle_mesh("./total-curvature-estimation/example_data/cow_poi
 N, F = igl.read_triangle_mesh("./total-curvature-estimation/example_data/cow_normals.ply")
 
 # calculate curvature
-K = calcurve.cloud(V, N)
+K = curvcalc.cloud(V, N)
 
 # scale curvature values for better visualization
 K_vis = K**0.0625

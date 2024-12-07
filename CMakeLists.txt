@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(calcurve)
+project(curvcalc)
 
 list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 

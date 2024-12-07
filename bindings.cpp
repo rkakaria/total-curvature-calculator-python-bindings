@@ -26,7 +26,7 @@ Eigen::VectorXd wrap_cloud(const Eigen::MatrixXd& V, const Eigen::MatrixXd& N) {
 
 
 // Define the module
-PYBIND11_MODULE(calcurve, m)
+PYBIND11_MODULE(curvcalc, m)
 {
     m.def("mesh", &wrap_mesh);
 
