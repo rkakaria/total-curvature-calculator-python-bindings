@@ -1,7 +1,7 @@
-# total-curvature-calculator-python-bindings
+# curvcalc: a Python binding of the C++ total curvature calculator
 
 ## Description
-This is a Python binding library for the [total curvature estimation calculator](https://github.com/HeCraneChen/total-curvature-estimation) by [Professor Crane Chen](https://github.com/HeCraneChen) written in C++. The total curvature estimation calculator is a fast and robust total curvature estimation method that works for both triangle meshes and point clouds. 
+This is a Python binding library for the [total curvature estimation calculator](https://github.com/HeCraneChen/total-curvature-estimation) written in C++. The total curvature estimation calculator is a fast and robust total curvature estimation method that works for both triangle meshes and point clouds. 
 
 ## Dependencies
 
@@ -80,4 +80,23 @@ K : vector
 
 K_vis: vector
     Scaled curvature values for better visualization
+```
+
+## Citation
+```
+@inproceedings{10.1145/3587421.3595439,
+author = {Chen, Crane He},
+title = {Estimating Discrete Total Curvature with Per Triangle Normal Variation},
+year = {2023},
+isbn = {9798400701436},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3587421.3595439},
+doi = {10.1145/3587421.3595439},
+booktitle = {ACM SIGGRAPH 2023 Talks},
+articleno = {56},
+numpages = {2},
+location = {Los Angeles, CA, USA},
+series = {SIGGRAPH '23}
+}
 ```
