@@ -1,4 +1,7 @@
 # curvcalc: a Python binding of the C++ total curvature calculator
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/73a276da-eab3-4961-a43f-8d332730ae50" />
+</p>
 
 ## Description
 This is a Python binding library for the [total curvature estimation calculator](https://github.com/HeCraneChen/total-curvature-estimation) written in C++. The total curvature estimation calculator is a fast and robust total curvature estimation method that works for both triangle meshes and point clouds. 
@@ -60,6 +63,9 @@ python3 test_cloud.py
 ```
 <img width="1532" alt="Cow_Sagittal_Point_Cloud" src="https://github.com/user-attachments/assets/bc57d602-4d0c-44f3-af96-659eb44d098a">
 
+The Smithsonian's [3D content collection](https://3d.si.edu/) is an excellent place to find open source models to play around with!
+![Mammoth](https://github.com/user-attachments/assets/5ea80d2f-6308-44a2-859c-5056aa620772)
+
 ## Documentation
 
 Parameters 
@@ -82,7 +88,7 @@ K_vis: vector
     Scaled curvature values for better visualization
 ```
 
-## Citation
+## References
 ```
 @inproceedings{10.1145/3587421.3595439,
 author = {Chen, Crane He},
