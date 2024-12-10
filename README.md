@@ -48,7 +48,7 @@ make
 Please visit the original C++ library readme for issues locating openmp on Apple Silicon machines. 
 
 ### Run
-Exit the build folder and run the test files from the total-curvature-calculator-python-bindings folder. Libigl is used to read 3D model files and polyscope to visualize the models and returned curvature values, which are stored in the variable K.
+Exit the build folder and run the test files from the total-curvature-calculator-python-bindings folder. We use the Python distributions of libigl to read 3D model files and polyscope to visualize the models and returned curvature values, which are stored in the variable K.
 #### Triangle Mesh
 ```
 cd .. 
@@ -68,6 +68,18 @@ The Smithsonian's [3D content collection](https://3d.si.edu/) is an excellent pl
 
 ## Documentation
 
+Functions
+----------
+The **curvcalc.mesh()** function requires V, F, and N from a triangle mesh file as inputs, and returns K: 
+```
+K = curvcalc.mesh(V, F, N)
+```
+
+The **curvcalc.cloud()** function requires V and N from point cloud files as inputs, and returns K:
+```
+K = curvcalc.cloud(V, N)
+```
+
 Parameters 
 ---------- 
 ```
@@ -78,6 +90,7 @@ F : numpy int array, optional (default None) (n, 3)
 N : numpy double array (n, 3)
     Matrix of normalized vectors at a vertex
 ```
+
 Returns 
 ------- 
 ```
